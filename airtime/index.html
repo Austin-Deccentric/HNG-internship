@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="mobile.css">
     </head>
     <body>
       <nav class="navbar navbar-light">
@@ -21,8 +22,38 @@
             <img src="img/share.jpg" alt="two-people" id="image">
             <p>Share airtime to interns <br />with ease</p>
           </div>
-          <div class="col-sm-6 form">
-            
+          <form id="form-container" action="">
+            <div class="select">
+              <label for="currency">Select your currency</label><br>
+              <select name="currency" id="currency">
+                <option value="" disabled selected>Select your currency</option>
+                <option value="dollar">&dollar;</option>
+                <option value="naira">&#8358;</option>
+                <option value="euro">&euro;</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>  
+            <div class="select-network"><br>
+              <label for="network">Select your network provider</label><br>
+              <select name="network" id="network">
+                <option value="" disabled selected>Select your network provider</option>
+                <option value="MTN">MTN;</option>
+                <option value="AIRTEL">AIRTEL</option>
+                <option value="GLO">GLO</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div class="amount"><br>
+              <label for="Amount">Amount you wish to send</label><br>
+              <input type="text" id="Amount" name="Amount" placeholder="N200">
+            </div>  
+            <div class="number"><br>
+              <label for="number">Recipient's Number</label><br>
+              <input type="text" id="number" name="number" placeholder="+2348156883674">
+            </div>  
+            <span class="btm">Note: For multiple recipients, use ‘;’ after each consecutive number </span>
+            <button class="btn">Send</button>
+          </form>
           </div>
         </div>
         

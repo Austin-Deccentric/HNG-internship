@@ -1,10 +1,13 @@
 body{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  position: relative;
 }
 .navbar{
   background-color: #00AEFF;
+  max-width: 100%;
 }
 
 #text{
@@ -25,5 +28,44 @@ p{
   color: #00AEFF;
 font-weight: normal;
 font-size: 40px;
+}
 
+#form-container{
+  position: absolute;
+  left: 50%;
+  margin: 20px 0px 0px 30px;
+  background: #fff;
+}
+
+#form-container label{
+  color: #333;
+}
+
+#form-container select,
+#form-container input{
+  border: 2px #828282 solid;
+  border-radius: 5px;
+  width: 450px;
+  padding: 10px;
+}
+
+.btm{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn{
+  display: block;
+  text-align: center;
+  color: #fff;
+  background: #00AEFF;
+  width: 450px;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.btn:hover{
+  background: #086E9E;
+  color: #fff;
 }
