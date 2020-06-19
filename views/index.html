@@ -6,23 +6,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="mobile.css">
+        <link href="/static/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/mobile.css">
     </head>
     <body>
       <nav class="navbar navbar-light">
         <a class="navbar-brand" href="#" id="text">
-          <img src="img/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="HNG logo" loading="lazy">
+          <img src="/static/img/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="HNG logo" loading="lazy">
           HNG Internship
         </a>
       </nav>
       <div class="container">
         <div class="row">
           <div class="col-sm-6 image">
-            <img src="img/share.jpg" alt="two-people" id="image">
+            <img src="/static/img/share.jpg" alt="two-people" id="image">
             <p>Share airtime to interns <br />with ease</p>
           </div>
-          <form id="form-container" action="">
+          <form id="form-container" action="/transact" method="POST">
             <div class="select">
               <label for="currency">Select your currency</label><br>
               <select name="currency" id="currency">
@@ -37,15 +37,15 @@
               <label for="network">Select your network provider</label><br>
               <select name="network" id="network">
                 <option value="" disabled selected>Select your network provider</option>
-                <option value="MTN">MTN;</option>
-                <option value="AIRTEL">AIRTEL</option>
-                <option value="GLO">GLO</option>
+                <option value="mtn">MTN;</option>
+                <option value="airtel">AIRTEL</option>
+                <option value="glo">GLO</option>
                 <option value="Others">Others</option>
               </select>
             </div>
             <div class="amount"><br>
               <label for="Amount">Amount you wish to send</label><br>
-              <input type="text" id="Amount" name="Amount" placeholder="N200">
+              <input type="text" id="Amount" name="amount" placeholder="N200">
             </div>  
             <div class="number"><br>
               <label for="number">Recipient's Number</label><br>
