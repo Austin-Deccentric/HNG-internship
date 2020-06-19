@@ -1,6 +1,34 @@
-@media (max-width: 640px) {
+@media (max-width: 640px) 
+{
+  body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  .navbar{
+    width: 100%;
+    overflow: auto;
+  }
+
+  #image{
+    margin-top: -50px;
+  }
+
   #form-container{
+    background: none;
     top: 85%;
     left: 0;
     margin-left: 5px;
+    margin-bottom: 30px;
   }
+
+  #form-container select,
+  #form-container input{
+    width: 100%;
+  }
+
+  .btn{
+    width: 100%;
+  }
+}
